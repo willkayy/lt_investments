@@ -1,0 +1,19 @@
+tickers:
+  US:
+    stocks:
+      - AAPL
+      - GOOGL
+      - MSFT
+      - TSLA
+    etfs:
+      - SPY
+      - QQQ
+      - VTI
+  AU:
+    stocks:
+      - CBA.AX
+      - BHP.AX
+      - CSL.AX
+    etfs:
+      - VAS.AX
+      - VGS.AX

@@ -1,0 +1,33 @@
+# Investment Settings
+monthly_budget: 2000.0
+minimum_allocation_pct: 5.0
+lookback_days: 90
+
+# Model Parameters (tunable)
+scoring_weights:
+  price_position: 0.4
+  momentum_decay: 0.3
+  volatility_adjusted: 0.2
+  volume_confirmation: 0.1
+
+momentum_decay_factor: 0.95
+volatility_window: 30
+
+# Data Sources
+primary_api: "alpha_vantage"
+api_keys:
+  alpha_vantage: "${ALPHA_VANTAGE_API_KEY}"
+
+# Markets
+supported_markets: ["US", "AU"]
+market_configs:
+  US:
+    currency: "USD"
+    timezone: "America/New_York"
+  AU:
+    currency: "AUD"
+    timezone: "Australia/Sydney"
+
+# Backtesting
+backtest_start_date: "2023-01-01"
+backtest_end_date: "2024-01-01"
